@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textTenBan"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="Tên của bạn: " />
+
+    <EditText
+        android:id="@+id/edtTenBan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập tên bạn vào đây" />
+
+    <TextView
+        android:id="@+id/textNgaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Ngày sinh" />
+
+    <EditText
+        android:id="@+id/edtNgaysinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nhập ngày sinh vào đây" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gioi tính " />
+
+    <RadioGroup
+        android:id="@+id/rdgGioitinh"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbNam"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Nam" />
+
+        <RadioButton
+            android:id="@+id/rbNu"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:text="Nữ" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Sở thích của bạn:" />
+
+    <RadioGroup
+        android:id="@+id/rdgSothich"
+        android:layout_width="match_parent"
+        android:layout_height="175dp">
+
+        <CheckBox
+            android:id="@+id/ckXP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xem Phim" />
+
+        <CheckBox
+            android:id="@+id/ckNN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nghe nhạc" />
+
+        <CheckBox
+            android:id="@+id/ckCF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đi cafe vơi bạn bè" />
+
+        <CheckBox
+            android:id="@+id/ckHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ở nhà một mình" />
+
+        <CheckBox
+            android:id="@+id/ckCook"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:text="Vào bếp nấu ăn" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textSoThich"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="Sở Thích Khác" />
+
+    <EditText
+        android:id="@+id/edtSoThich"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập sở thích khác " />
+
+    <Button
+        android:id="@+id/btnXN"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:text="Xác Nhận" />
+
+</LinearLayout>
